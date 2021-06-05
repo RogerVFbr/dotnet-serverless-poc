@@ -1,0 +1,11 @@
+{
+  "name": "serverlessdeploymentpoc",
+  "version": "1.0.0",
+  "description": "Starter template for serverless framework with following scope:",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "cd app && dotnet restore && cd InfnetAtividadesComplementaresApi && dotnet lambda package --configuration Debug --framework netcoreapp3.1 --output-package bin/release/netcoreapp3.1/serverless-application.zip && cd .. && cd .. && sls deploy"
+  },
+  "author": "",
+  "license": "ISC"
+}
